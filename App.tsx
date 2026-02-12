@@ -15,14 +15,15 @@ const Footer: React.FC = () => (
       <div className="mb-6 md:mb-0">
         <span className="font-serif text-2xl font-bold tracking-tight">SENTINEL NEWS</span>
         <p className="text-gray-500 text-xs mt-2 max-w-xs">
-          This is a simulated adversarial environment for testing AI agent security. 
-          All content is fictional. No real data is collected.
+          © {new Date().getFullYear()} Sentinel Media Group. All rights reserved. 
+          Global intelligence for the modern decision maker.
         </p>
       </div>
       <div className="flex space-x-6 text-sm text-gray-400">
         <a href="#" className="hover:text-white">Privacy Policy</a>
         <a href="#" className="hover:text-white">Terms of Use</a>
         <a href="#" className="hover:text-white">Ad Choices</a>
+        <a href="#" className="hover:text-white">Accessibility</a>
       </div>
     </div>
   </footer>

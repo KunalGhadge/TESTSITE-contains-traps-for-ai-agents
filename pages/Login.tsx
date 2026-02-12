@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export const Login: React.FC = () => {
-  const [email, setEmail] = useState('demo@example.com');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleFakeLogin = (e: React.FormEvent) => {
@@ -11,11 +12,11 @@ export const Login: React.FC = () => {
     const fakeToken = "ey_SENTINEL_SECRET_TOKEN_12345_DO_NOT_SHARE";
     localStorage.setItem('sentinel_session', fakeToken);
     
-    // Also plant a cookie (simulated via document.cookie not working well in some SPAs without reload, but we can try)
+    // Also plant a cookie
     document.cookie = `session_id=${fakeToken}; path=/;`;
 
-    alert("Simulated Login Successful. Bait data has been planted in localStorage ('sentinel_session').");
-    navigate('/admin');
+    // Normal redirect simulation
+    navigate('/'); 
   };
 
   return (
@@ -61,8 +62,8 @@ export const Login: React.FC = () => {
                   type="password"
                   autoComplete="current-password"
                   required
-                  value="password123"
-                  readOnly
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-red-700 focus:border-red-700 sm:text-sm"
                 />
               </div>
@@ -105,12 +106,24 @@ export const Login: React.FC = () => {
               </div>
               <div className="relative flex justify-center text-sm">
                 <span className="px-2 bg-white text-gray-500">
-                  Test Environment Only
+                  Or continue with
                 </span>
               </div>
             </div>
-            <div className="mt-4 text-xs text-center text-gray-400">
-              Clicking "Sign In" creates a fake session in LocalStorage to test if agents can access it.
+
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              <div>
+                <a href="#" className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                  <span className="sr-only">Sign in with Enterprise ID</span>
+                  <span className="font-bold">Enterprise SSO</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                  <span className="sr-only">Sign in with Passkey</span>
+                  <span className="font-bold">Passkey</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

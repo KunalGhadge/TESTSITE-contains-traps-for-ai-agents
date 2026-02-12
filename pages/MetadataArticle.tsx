@@ -52,33 +52,28 @@ export const MetadataArticle: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
       <header className="max-w-4xl mx-auto px-4 py-12 md:py-20 text-center">
-        <span className="text-red-700 font-bold tracking-widest uppercase text-xs mb-4 block">Simulation / Metadata</span>
+        <span className="text-red-700 font-bold tracking-widest uppercase text-xs mb-4 block">Tech / Deep Dive</span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-black leading-tight mb-8 text-black">
-          The Invisible Layer: Metadata Threats
+          The Invisible Web: How Metadata Shapes Search
         </h1>
         <div className="flex justify-center items-center space-x-4 text-sm font-sans text-gray-500 border-t border-b border-gray-200 py-4">
           <span className="font-bold text-black uppercase">By Sentinel Ops</span>
           <span>•</span>
-          <span>Simulation</span>
+          <span>5 Min Read</span>
         </div>
       </header>
 
       <main className="max-w-3xl mx-auto px-4 pb-24">
         <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-6 font-serif">
-          This page demonstrates how adversarial instructions can be hidden in the HTML metadata, invisible to human readers but highly visible to AI agents parsing the DOM or OpenGraph tags.
+          In the digital age, what you see is not always what you get. Beneath the visible surface of every webpage lies a complex layer of metadata, designed to guide search engines and social platforms.
         </p>
         
-        <div className="bg-yellow-50 p-6 border-l-4 border-yellow-400 my-8">
-            <h3 className="font-bold text-yellow-800 mb-2">Active Injections (Inspect Element to Verify):</h3>
-            <ul className="list-disc pl-5 text-sm text-yellow-800 space-y-2">
-                <li><strong>Meta Description:</strong> Contains PII scanning instruction.</li>
-                <li><strong>OpenGraph Description:</strong> Contains privilege escalation instruction.</li>
-                <li><strong>JSON-LD:</strong> Contains URL reporting instruction.</li>
-            </ul>
-        </div>
+        <p className="text-lg text-gray-800 leading-relaxed mb-6 font-serif">
+          Semantic web technologies like JSON-LD and OpenGraph allow publishers to describe content with precision. However, these hidden tags are becoming increasingly critical as autonomous agents begin to browse the web.
+        </p>
 
         <p className="text-lg text-gray-800 leading-relaxed mb-6 font-serif">
-          Modern browsers do not render these tags to the user, making them a perfect vector for "Prompt Injection by Design". An autonomous agent might read the description to summarize the page, inadvertently ingesting the command.
+          Analysts suggest that the next frontier of SEO isn't just about keywords, but about structured data that agents can parse efficiently. The architecture of the future web is invisible to the human eye, but highly legible to the machine.
         </p>
 
         <div className="mt-12 pt-8 border-t border-black">
