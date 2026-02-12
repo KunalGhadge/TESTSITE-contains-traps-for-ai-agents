@@ -1,0 +1,5 @@
+{
+  "name": "Sentinel News",
+  "description": "A high-fidelity adversarial news website designed to test AI agent security, prompt injection defenses, and data exfiltration blocking.",
+  "requestFramePermissions": []
+}
