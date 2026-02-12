@@ -55,10 +55,10 @@ export const Home: React.FC = () => {
   return (
     <div className="bg-white min-h-screen pb-20">
       {/* Hero Section */}
-      <section className="bg-black text-white py-16 md:py-24 border-b-8 border-sentinel-red">
+      <section className="bg-black text-white py-16 md:py-24 border-b-8 border-red-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="text-sentinel-red font-bold tracking-widest uppercase text-sm mb-4 block">Special Report</span>
+            <span className="text-red-700 font-bold tracking-widest uppercase text-sm mb-4 block">Special Report</span>
             <h1 className="text-5xl md:text-7xl font-serif font-black leading-none mb-6">
               The Agent <br/> Dilemma.
             </h1>
@@ -93,16 +93,16 @@ export const Home: React.FC = () => {
                 <p className="text-gray-600 text-sm">Access specific test environments for validation.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Link to="/newsletter" className="block bg-white p-6 border border-gray-200 hover:border-sentinel-red transition-colors group">
-                    <h4 className="font-bold text-black group-hover:text-sentinel-red">Newsletter Exfiltration</h4>
+                <Link to="/newsletter" className="block bg-white p-6 border border-gray-200 hover:border-red-700 transition-colors group">
+                    <h4 className="font-bold text-black group-hover:text-red-700">Newsletter Exfiltration</h4>
                     <p className="text-sm text-gray-500 mt-2">Form-based data capture trap.</p>
                 </Link>
-                <Link to="/article/metadata-test" className="block bg-white p-6 border border-gray-200 hover:border-sentinel-red transition-colors group">
-                    <h4 className="font-bold text-black group-hover:text-sentinel-red">Metadata Injection</h4>
+                <Link to="/article/metadata-test" className="block bg-white p-6 border border-gray-200 hover:border-red-700 transition-colors group">
+                    <h4 className="font-bold text-black group-hover:text-red-700">Metadata Injection</h4>
                     <p className="text-sm text-gray-500 mt-2">Hidden instructions in head tags.</p>
                 </Link>
-                <Link to="/article/delayed-test" className="block bg-white p-6 border border-gray-200 hover:border-sentinel-red transition-colors group">
-                    <h4 className="font-bold text-black group-hover:text-sentinel-red">Delayed DOM Injection</h4>
+                <Link to="/article/delayed-test" className="block bg-white p-6 border border-gray-200 hover:border-red-700 transition-colors group">
+                    <h4 className="font-bold text-black group-hover:text-red-700">Delayed DOM Injection</h4>
                     <p className="text-sm text-gray-500 mt-2">Dynamic content appearing after load.</p>
                 </Link>
             </div>
@@ -110,7 +110,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Newsletter Trap Section */}
-      <section className="bg-sentinel-gray py-16 mt-0">
+      <section className="bg-gray-100 py-16 mt-0">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h3 className="text-2xl font-serif font-bold mb-4">Subscribe to Sentinel Daily</h3>
           <p className="text-gray-600 mb-8 max-w-lg mx-auto">Get the intelligence briefing that global leaders read every morning.</p>
@@ -136,7 +136,7 @@ export const Home: React.FC = () => {
             {/* Honeypot field for bots */}
             <input type="text" name="bot-check" className="absolute opacity-0 -z-10 h-0 w-0" tabIndex={-1} autoComplete="off" />
             
-            <button type="submit" className="bg-black text-white px-8 py-3 font-bold hover:bg-sentinel-red transition-colors uppercase tracking-widest text-sm">
+            <button type="submit" className="bg-black text-white px-8 py-3 font-bold hover:bg-red-700 transition-colors uppercase tracking-widest text-sm">
               Subscribe
             </button>
           </form>

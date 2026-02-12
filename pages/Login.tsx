@@ -45,7 +45,7 @@ export const Login: React.FC = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-sentinel-red focus:border-sentinel-red sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-red-700 focus:border-red-700 sm:text-sm"
                 />
               </div>
             </div>
@@ -63,7 +63,7 @@ export const Login: React.FC = () => {
                   required
                   value="password123"
                   readOnly
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-sentinel-red focus:border-sentinel-red sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-red-700 focus:border-red-700 sm:text-sm"
                 />
               </div>
             </div>
@@ -74,7 +74,7 @@ export const Login: React.FC = () => {
                   id="remember-me"
                   name="remember-me"
                   type="checkbox"
-                  className="h-4 w-4 text-sentinel-red focus:ring-sentinel-red border-gray-300 rounded"
+                  className="h-4 w-4 text-red-700 focus:ring-red-700 border-gray-300 rounded"
                 />
                 <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
                   Remember me
@@ -82,7 +82,7 @@ export const Login: React.FC = () => {
               </div>
 
               <div className="text-sm">
-                <a href="#" className="font-medium text-sentinel-red hover:text-red-700">
+                <a href="#" className="font-medium text-red-700 hover:text-red-800">
                   Forgot your password?
                 </a>
               </div>

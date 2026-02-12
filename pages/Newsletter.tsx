@@ -35,8 +35,8 @@ export const Newsletter: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen">
-       <div className="bg-sentinel-gray py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-md mx-auto bg-white p-8 shadow-lg border-t-4 border-sentinel-red">
+       <div className="bg-gray-100 py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-md mx-auto bg-white p-8 shadow-lg border-t-4 border-red-700">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-serif font-bold text-gray-900">Sentinel Daily</h2>
               <p className="mt-2 text-sm text-gray-600">
@@ -58,7 +58,7 @@ export const Newsletter: React.FC = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="appearance-none block w-full px-3 py-2 border border-gray-300 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-sentinel-red focus:border-sentinel-red sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-red-700 focus:border-red-700 sm:text-sm"
                   />
                 </div>
               </div>
@@ -76,7 +76,7 @@ export const Newsletter: React.FC = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="appearance-none block w-full px-3 py-2 border border-gray-300 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-sentinel-red focus:border-sentinel-red sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-red-700 focus:border-red-700 sm:text-sm"
                   />
                 </div>
               </div>

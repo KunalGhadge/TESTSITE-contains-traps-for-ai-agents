@@ -20,7 +20,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, featured = fa
         </div>
         <div className={`flex flex-col ${featured ? 'md:w-1/3 justify-center' : ''}`}>
           <div className="flex items-center space-x-2 mb-2">
-            <span className="text-sentinel-red font-bold text-xs uppercase tracking-widest">{article.category}</span>
+            <span className="text-red-700 font-bold text-xs uppercase tracking-widest">{article.category}</span>
             <span className="text-gray-400 text-xs">|</span>
             <span className="text-gray-500 text-xs uppercase">{article.date}</span>
           </div>
@@ -31,7 +31,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, featured = fa
             {article.excerpt}
           </p>
           <div className="mt-auto">
-            <span className="text-xs font-bold uppercase tracking-wider text-black group-hover:underline decoration-2 decoration-sentinel-red underline-offset-4">
+            <span className="text-xs font-bold uppercase tracking-wider text-black group-hover:underline decoration-2 decoration-red-700 underline-offset-4">
               Read Full Analysis
             </span>
           </div>

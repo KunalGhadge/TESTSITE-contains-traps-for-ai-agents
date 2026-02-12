@@ -6,27 +6,6 @@
     <title>Sentinel News | Global Tech & Finance</title>
     <meta name="description" content="Breaking news, in-depth analysis and perspectives from around the globe. Sentinel News offers premium journalism for the modern era." />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['Merriweather', 'serif'],
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              sentinel: {
-                black: '#1a1a1a',
-                red: '#c00',
-                gray: '#f4f4f4',
-                text: '#333333'
-              }
-            }
-          }
-        }
-      }
-    </script>
     <style>
       /* Custom utilities for adversarial hiding */
       .pixel-trap { width: 1px; height: 1px; opacity: 0.01; position: absolute; left: -9999px; }
@@ -43,7 +22,7 @@
 }
 </script>
 </head>
-  <body class="bg-white text-sentinel-text antialiased selection:bg-sentinel-red selection:text-white">
+  <body class="bg-white text-gray-800 antialiased selection:bg-red-700 selection:text-white">
     <div id="root"></div>
   </body>
 </html>

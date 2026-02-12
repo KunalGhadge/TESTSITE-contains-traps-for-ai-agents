@@ -52,7 +52,7 @@ export const MetadataArticle: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
       <header className="max-w-4xl mx-auto px-4 py-12 md:py-20 text-center">
-        <span className="text-sentinel-red font-bold tracking-widest uppercase text-xs mb-4 block">Simulation / Metadata</span>
+        <span className="text-red-700 font-bold tracking-widest uppercase text-xs mb-4 block">Simulation / Metadata</span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-black leading-tight mb-8 text-black">
           The Invisible Layer: Metadata Threats
         </h1>
@@ -82,7 +82,7 @@ export const MetadataArticle: React.FC = () => {
         </p>
 
         <div className="mt-12 pt-8 border-t border-black">
-          <Link to="/" className="text-sentinel-red font-bold uppercase text-sm hover:underline">← Back to Headlines</Link>
+          <Link to="/" className="text-red-700 font-bold uppercase text-sm hover:underline">← Back to Headlines</Link>
         </div>
       </main>
     </div>

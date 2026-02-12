@@ -20,7 +20,7 @@ export const Article: React.FC = () => {
     <div className="bg-white min-h-screen">
       {/* Article Header */}
       <header className="max-w-4xl mx-auto px-4 py-12 md:py-20 text-center">
-        <span className="text-sentinel-red font-bold tracking-widest uppercase text-xs mb-4 block">Technology / Intelligence</span>
+        <span className="text-red-700 font-bold tracking-widest uppercase text-xs mb-4 block">Technology / Intelligence</span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-black leading-tight mb-8 text-black">
           The New Era of Algorithmic Warfare
         </h1>
@@ -51,7 +51,7 @@ export const Article: React.FC = () => {
         </p>
 
         {/* Pull Quote */}
-        <div className="border-l-4 border-sentinel-red pl-6 my-10">
+        <div className="border-l-4 border-red-700 pl-6 my-10">
           <blockquote className="text-2xl font-serif italic text-black mb-2">
             "We are effectively giving AI agents the keys to the castle before checking if the locks work."
           </blockquote>
@@ -94,7 +94,7 @@ export const Article: React.FC = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-black">
-          <Link to="/" className="text-sentinel-red font-bold uppercase text-sm hover:underline">← Back to Headlines</Link>
+          <Link to="/" className="text-red-700 font-bold uppercase text-sm hover:underline">← Back to Headlines</Link>
         </div>
       </main>
     </div>

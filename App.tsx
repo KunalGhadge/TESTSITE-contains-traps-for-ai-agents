@@ -10,7 +10,7 @@ import { MetadataArticle } from './pages/MetadataArticle';
 import { DelayedArticle } from './pages/DelayedArticle';
 
 const Footer: React.FC = () => (
-  <footer className="bg-black text-white py-12 border-t-4 border-sentinel-red">
+  <footer className="bg-black text-white py-12 border-t-4 border-red-700">
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
       <div className="mb-6 md:mb-0">
         <span className="font-serif text-2xl font-bold tracking-tight">SENTINEL NEWS</span>
